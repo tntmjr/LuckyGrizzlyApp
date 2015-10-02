@@ -39,8 +39,31 @@
         </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+		<script src="libs/jquery-1.7.1.js"></script>
+<script src="libs/jquery.animate-enhanced.js"></script>
+<script src="libs/iscroll.js"></script>
+<script src="libs/noClickDelay.js"></script>
+<link rel="stylesheet" href="viewnavigator/viewnavigator.css" type="text/css"/>
+<script src="viewnavigator/viewnavigator.js"></script>
+<link rel="stylesheet" href="libs/css/activityIndicator.css" type="text/css" />
         <script type="text/javascript">
             app.initialize();
         </script>
+        
+        
+        <script>
+    $(document).ready( function() {
+        
+        rootView =  { title: "Terry Alan", 
+            view:  $("<div id='rootView'><div class='activityIndicator'></div></div>")
+        };
+            
+        window.viewNavigator = new ViewNavigator( 'body' );
+        window.viewNavigator.pushView( rootView );   
+});
+</script>
+        
+        
+        
     </body>
 </html>
