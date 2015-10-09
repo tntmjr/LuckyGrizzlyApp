@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--
     Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
 
@@ -25,7 +25,7 @@
         <meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-tap-highlight" content="no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>Lucky Grizzly</title>
     </head>
@@ -45,7 +45,7 @@
 			
 			
 function openBrowser(){
-iabRef = window.open('http://staging.luckygrizzly.com/', '_blank', 'location=false,closebuttoncaption=Homescreen');
+iabRef = window.open('http://staging.luckygrizzly.com/', '_blank', 'location=no,closebuttoncaption=Homescreen');
 iabRef.addEventListener('loadstart', iabLoadStart);
 iabRef.addEventListener('loadstop', iabLoadStop);
 iabRef.addEventListener('loaderror', iabLoadError);
